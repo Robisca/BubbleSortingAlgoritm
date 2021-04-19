@@ -30,14 +30,14 @@ void showvector(std::vector <int> desortat)               //Function that show a
 
 int main()
 {
-    srand(time(NULL));                                    //Random seed generator
+    srand(time(NULL));                                    //srand with random seed
 
     int n = rand() % 100;                                 //This is the size of the vector.Notice that bigger size determinate longer time to sort
     std::vector <int> desortat;
 
     for (int i = 0; i <= n; i++)                          //Make vector size n with random value in it
     {
-        desortat.push_back(rand() % 5000);
+        desortat.push_back(rand() % 5000);                //value is between 0 and 5000
     }
     showvector(desortat);
     clear();
